@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial ES6</title>
+</head>
+<body>
+    <H3>Apel</H3>
+    <H3>Mangga</H3>
+    <H3>Pisang</H3>
+    <H3>Jeruk</H3>
+
+
+    <script>
+        window.onload = function (){
+
+            var buah = document.getElementsByTagName("h3")
+            for (let index = 0; index < buah.length; index++) {
+                buah [index].onclick = function () { 
+                    alert('index ini adalah ' + index);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
